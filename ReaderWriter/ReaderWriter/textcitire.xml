@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cod> 
+ <linie_cod>
+ 	int a;
+ </linie_cod>
+ <linie_cod>
+ 	int b;
+ </linie_cod>
+</cod>
+
