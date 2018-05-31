@@ -14,16 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/textcitire.txt</name>
-			<type>1</type>
-			<locationURI>PROJECT_LOC/textcitire.txt</locationURI>
-		</link>
-		<link>
-			<name>src/textscriere.txt</name>
-			<type>1</type>
-			<locationURI>PROJECT_LOC/textscriere.txt</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
