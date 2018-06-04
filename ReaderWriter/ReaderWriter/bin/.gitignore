@@ -4,3 +4,7 @@
 /textscriere.txt
 /writer.class
 /xmlParser.class
+/exception.class
+/CustomException.class
+/exceptionWrite.class
+/exceptionRead.class

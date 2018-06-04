@@ -7,22 +7,28 @@ public class reader  {
 	public String File;
 	public String Text = "";
 	public String Line;
-	
-	reader(String File) throws IOException {
+	exceptionRead newExc = new exceptionRead("No lines were read from file.");
+	reader(String File) throws IOException, exceptionRead {
 		this.File = File;
 		readerBuffer(this.File);
 		
 	}
 	
-	public void readerBuffer(String File) throws IOException {
+	public void readerBuffer(String File) throws IOException, exceptionRead {
+		int counter = 0;
+		
 		FileReader fileReader = new FileReader(File);
 		
 	    BufferedReader bufferedReader = new BufferedReader(fileReader);
 	    
 	    while((Line = bufferedReader.readLine()) != null) {
 	        this.Text += Line;
+	        counter++;
 	    }   
 	   
+	    if(counter == 0)
+	    	throw newExc;
+	    
 	    bufferedReader.close();     
 	}
 	

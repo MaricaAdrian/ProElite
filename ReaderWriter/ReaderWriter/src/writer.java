@@ -4,14 +4,16 @@ public class writer {
 
 	public String Text = "";
 	public String File;
+	exceptionWrite newExc=new exceptionWrite("No words have been writed to file.");
 	
-	writer(String File, String Text) throws IOException {
+	
+	writer(String File, String Text) throws IOException, exceptionWrite{
 		this.File = File;
 		this.Text = Text;
 		writerBuffer(this.File, this.Text);
 	}
 	
-	public void writerBuffer(String File, String Text) throws IOException {
+	public void writerBuffer(String File, String Text) throws IOException, exceptionWrite  {
 		FileWriter fileWriter = new FileWriter(File);
 		
 		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -20,10 +22,16 @@ public class writer {
 			bufferedWriter.write(word);
 		    bufferedWriter.newLine();
 		}
-		bufferedWriter.write("Numar de cuvinte:" + words.length);
+	
 		
+		
+		if(words.length == 1)
+			throw newExc;
+		else 
+			bufferedWriter.write("Numar de cuvinte:" + words.length);
 	
 		bufferedWriter.close();
+		
 	}
 	
 	
