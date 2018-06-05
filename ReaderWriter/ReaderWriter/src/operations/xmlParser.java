@@ -1,3 +1,4 @@
+package operations;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
@@ -24,6 +25,12 @@ public class xmlParser {
 	public String xmlParsed;
 	public String text;
 	
+	
+	/*
+	 * Constructor of our xmlParser class, calls toString method
+	 * @param fileName file from where the xml code will be read
+	 * 
+	 */
 	xmlParser(String fileName) {
 		
 		this.fileName = fileName;
@@ -31,7 +38,10 @@ public class xmlParser {
 		
 	}
 	
-	
+	/*
+	 * Reads xmlCode and transforms it to string
+	 * @param fileName file from where the xml code will be read
+	 */
 	public static String toString(String fileName) 
 
 	{ 
@@ -66,6 +76,11 @@ public class xmlParser {
 		return st;
 
 	} 
+	
+	/*
+	 * Method that get's the xml string from our class and returns the parsed xml string
+	 * @return The string that has been read from XML (without it's attributes)
+	 */
 	
 	public String getString() throws SAXException, IOException, ParserConfigurationException {
 		//Parse XML String 
