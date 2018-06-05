@@ -9,7 +9,7 @@ public class writer {
 	public String File;
 	exceptionWrite newExc=new exceptionWrite("No words have been writed to file.");
 	
-	/*
+	/**
 	 * Constructor of our writer class, takes the name of the file and calls the writer buffer
 	 * @param File name of the file
 	 * @param Text Text that will be writed to the file
@@ -21,7 +21,7 @@ public class writer {
 	}
 	
 	
-	/*
+	/**
 	 * Writer Buffer, writes the text given to our file
 	 * @param File file where the text will be write
 	 * @param Text Text that will be writed to file

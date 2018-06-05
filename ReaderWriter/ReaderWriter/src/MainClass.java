@@ -12,7 +12,7 @@ import operations.writer;
 import java.util.Scanner;
 
 public class MainClass {
-	/*
+	/**
 	 * Main method of our program
 	 * @param args Array of strings in case of errors or passing text from outer sources
 	 */

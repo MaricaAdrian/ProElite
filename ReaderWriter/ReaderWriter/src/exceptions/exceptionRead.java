@@ -3,7 +3,7 @@ package exceptions;
 
 public class exceptionRead extends Exception {
 
-	/*
+	/**
 	 * Constructor of our exception for reader class
 	 * @param message used to tell the exception message
 	 */
@@ -11,7 +11,7 @@ public class exceptionRead extends Exception {
         super(message);
     }
     
-    /*
+    /**
 	 * Constructor of our exception for reader class
 	 * @param message used to tell the exception message
 	 * @param throwable throwable object
@@ -20,7 +20,7 @@ public class exceptionRead extends Exception {
         super(message, throwable);
     }
     
-    /*
+    /**
 	 * Method that returns the string that was writed in super
 	 * @return String of our exception class
 	 */

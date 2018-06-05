@@ -13,7 +13,7 @@ public class reader  {
 	
 	
 	
-	/*
+	/**
 	 * Constructor of our reader class
 	 * @param File Location of the file from where the text will be read
 	 */
@@ -23,8 +23,9 @@ public class reader  {
 
 	}
 
-	/*
+	/**
 	 * Method that reads from file and put's the text into our class member Text
+	 * @param File Location of the file from where the text will be read
 	 */
 	public void readerBuffer(String File) throws IOException, exceptionRead {
 		int counter = 0;
