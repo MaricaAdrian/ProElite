@@ -1,20 +1,20 @@
 package operations;
 import java.io.*;
 
-import exceptions.exceptionWrite;
+import exceptions.ExceptionWrite;
 
-public class writer {
+public class Writer {
 
 	public String Text = "";
 	public String File;
-	exceptionWrite newExc=new exceptionWrite("No words have been writed to file.");
+	ExceptionWrite newExc=new ExceptionWrite("No words have been writed to file.");
 	
 	/**
 	 * Constructor of our writer class, takes the name of the file and calls the writer buffer
 	 * @param File name of the file
 	 * @param Text Text that will be writed to the file
 	 */
-	public writer(String File, String Text) throws IOException, exceptionWrite{
+	public Writer(String File, String Text) throws IOException, ExceptionWrite{
 		this.File = File;
 		this.Text = Text;
 		writerBuffer(this.File, this.Text);
@@ -26,7 +26,7 @@ public class writer {
 	 * @param File file where the text will be write
 	 * @param Text Text that will be writed to file
 	 */
-	public void writerBuffer(String File, String Text) throws IOException, exceptionWrite  {
+	public void writerBuffer(String File, String Text) throws IOException, ExceptionWrite  {
 		FileWriter fileWriter = new FileWriter(File);
 		
 		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);

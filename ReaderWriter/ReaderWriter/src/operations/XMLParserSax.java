@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 
-public class xmlParser {
+public class XMLParserSax {
 
 	public String fileName;
 	public String xmlParsed;
@@ -31,7 +31,7 @@ public class xmlParser {
 	 * @param fileName file from where the xml code will be read
 	 * 
 	 */
-	xmlParser(String fileName) {
+	public XMLParserSax(String fileName) {
 		
 		this.fileName = fileName;
 		this.xmlParsed = toString(this.fileName);

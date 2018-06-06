@@ -1,13 +1,13 @@
 package exceptions;
 
 
-public class exceptionWrite extends Exception {
+public class ExceptionWrite extends Exception {
 
 	/**
 	 * Constructor of our exception for writer class
 	 * @param message used to tell the exception message
 	 */
-    public exceptionWrite(String message) {
+    public ExceptionWrite(String message) {
         super(message);
     }
 
@@ -16,7 +16,7 @@ public class exceptionWrite extends Exception {
 	 * @param message used to tell the exception message
 	 * @param throwable throwable object
 	 */
-    public exceptionWrite(String message, Throwable throwable) {
+    public ExceptionWrite(String message, Throwable throwable) {
         super(message, throwable);
     }
     

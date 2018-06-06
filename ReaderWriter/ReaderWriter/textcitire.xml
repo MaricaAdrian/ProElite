@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ceva> 
-<linie_cod>int a;</linie_cod>
-<linie_cod>int b;</linie_cod>
-</ceva>
+<class number="20" kids="3"> 
+	<ceva id="5">
+		<informatie>int a;</informatie>
+		<informatie_2>Este gal cu 8</informatie_2>
+	</ceva>
+	<ceva test="picat">
+		<informatie>int b;</informatie>
+	</ceva>
+	<ceva>
+		<informatie>float c = 20;</informatie>
+	</ceva>
+</class>
 
