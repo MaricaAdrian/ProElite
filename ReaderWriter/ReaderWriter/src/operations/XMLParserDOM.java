@@ -42,7 +42,6 @@ public class XMLParserDOM {
 	/**
 	 * Reads xmlCode and transforms it to string
 	 * @param fileName file from where the xml code will be read
-	 * @param findTag used to tell the function which tag to find
 	 * @return String that has been read from the xml file
 	 */
 	public static String toString(String fileName) 
@@ -116,7 +115,7 @@ public class XMLParserDOM {
 	 * @return The string that has been read from XML (without it's attributes)
 	 */
 	public String getString() throws SAXException, IOException, ParserConfigurationException {
-		//Parse XML String 
+		
 		this.text = this.xmlParsed;
 
 		return this.text;
