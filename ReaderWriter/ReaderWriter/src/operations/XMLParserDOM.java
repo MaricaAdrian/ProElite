@@ -87,11 +87,14 @@ public class XMLParserDOM {
 							for(int j = 0; j < cAttribute.getLength(); j++) {
 
 								if(cNode.getTextContent() != "") {
-									st += "Attribute: " + cAttribute.item(j) + "";
-									st += cNode.getTextContent();
-									st += "\n";
+									st += "Attribute: " + cAttribute.item(j) + "\n";
 								}
 
+							}
+							
+							if(cNode.getTextContent() != "") {
+								st += cNode.getTextContent();
+								st += "\n";
 							}
 
 						}

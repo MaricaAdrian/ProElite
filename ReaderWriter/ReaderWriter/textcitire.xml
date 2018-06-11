@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class number="20" kids="3"> 
-	<ceva id="5">
-		<informatie>int a;</informatie>
-		<informatie_2>Este gal cu 8</informatie_2>
-	</ceva>
-	<ceva test="picat">
-		<informatie>int b;</informatie>
-	</ceva>
-	<ceva>
-		<informatie>float c = 20;</informatie>
-	</ceva>
-</class>
+<Employees> 
+	<Employee id="1" ceva="5">
+		<age>29</age>
+		<name>Ionescu</name>
+		<gender>Barbat</gender>
+		<role>Java developer</role>
+	</Employee>
+	<Employee id="2">
+		<age>45</age>
+		<name>Dan</name>
+		<gender>Barbat</gender>
+		<role>Manager</role>
+	</Employee>
+	<Employee id="3">
+		<age>21</age>
+		<name>Kristiana</name>
+		<gender>Femeie</gender>
+		<role>Secretara</role>
+	</Employee>
+	<Employee id="4">
+		<age>18</age>
+		<name>Hatz</name>
+		<gender>Barbat</gender>
+		<role>Hatzuitor profesinoist</role>
+	</Employee>
+</Employees>
 
